@@ -12,7 +12,7 @@
       rkdeveloptool = pkgs.stdenv.mkDerivation rec {
         pname = "rkdeveloptool";
         version = "unstable-2024-10-26";
-        name = "${name}-${version}";
+        name = "${pname}-${version}";
         src = pkgs.fetchFromGitHub {
           owner = "rockchip-linux";
           repo = "rkdeveloptool";

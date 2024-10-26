@@ -9,8 +9,10 @@
     { self, nixpkgs }:
     let
       pkgs = nixpkgs.legacyPackages.x86_64-darwin;
-      rkdeveloptool = pkgs.stdenv.mkDerivation {
-        name = "rkdeveloptool";
+      rkdeveloptool = pkgs.stdenv.mkDerivation rec {
+        pname = "rkdeveloptool";
+        version = "unstable-2024-10-26";
+        name = "${pname}-${version}";
         src = pkgs.fetchFromGitHub {
           owner = "rockchip-linux";
           repo = "rkdeveloptool";

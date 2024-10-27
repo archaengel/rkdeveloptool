@@ -31,6 +31,6 @@
       };
     in
     {
-      packages.x86_64-darwin.default = rkdeveloptool;
+      packages.x86_64-darwin.rkdeveloptool = rkdeveloptool;
     };
 }
